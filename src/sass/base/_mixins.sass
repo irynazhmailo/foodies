@@ -1,0 +1,22 @@
+@mixin before_circle
+  &:before
+    content: ""
+    position: absolute
+    width: 6px
+    height: 6px
+    border-radius: 100%
+    background-color: $main-color
+    top: 8px
+    left: 12px  
+
+@mixin before_circle_menu
+  &:before    
+    content: ""
+    position: absolute
+    width: 10px
+    height: 10px
+    border-radius: 100%
+    background-color: $background-color
+    top: 15px
+    left: -14px
+   

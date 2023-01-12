@@ -1,0 +1,68 @@
+.home 
+  max-height: 663px
+  padding: 42px 172px 130px 135px 
+  background: $background-color
+  &__box
+    display: grid
+    grid-template-columns: 533px 468px
+    gap: 127px
+    justify-content: space-between
+    &-img
+      margin-top: 64px
+      &-photo
+        position: relative
+        object-fit: contain
+        width: 468px 
+  &__title
+    margin-top: 112px 
+    font-weight: 600
+    font-size: 75px
+    line-height: 91px
+    color: $title-color
+  &__descr
+    color: $text-color
+    margin-top: 11px 
+    font-weight: 400
+    font-size: 16px
+    line-height: 23px
+
+.brandlogo
+  margin: 0 auto
+  margin-top: 46px 
+  padding-left: 135px
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  gap: 30px
+  &-items 
+    width: 155px
+    height: 34px        
+.header 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 41px 
+  position: relative
+  background-color: $background-color
+  &__logo
+    height: 32px
+  &__nav
+    &-list 
+      list-style-type: none
+      display: flex
+      align-items: center
+      margin-top: 15px
+    &-link  
+      position: relative
+      display: inline-block
+      text-decoration: none
+      color: $text-color
+      font-weight: 400
+      font-size: 14px
+      line-height: 19px
+      padding-left: 20px
+      transition: all 0.3s
+      &:hover
+        color: $main-color
+        @include before_circle
+       

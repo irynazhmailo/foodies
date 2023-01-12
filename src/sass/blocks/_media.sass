@@ -1,0 +1,267 @@
+@media (max-width: 1439px) 
+  .hamburger
+    display: none
+    border: none
+    background: none
+    cursor: pointer  
+  .home
+    max-height: 603px
+    &__box
+      grid-template-columns: 450px 421px
+      gap: 80px
+      &-img
+        &-photo
+          width: 421px
+    &__title
+      font-size: 60px      
+  .header
+    &__logo
+      height: 26px
+    &__nav
+      &-link
+        padding-left: 20px
+        font-size: 14px
+        &:hover:before
+          top: 6px
+          left: 13px 
+  .polcadots 
+    bottom: 145px
+    left: 305px
+    &-img  
+      width: 150px          
+  
+@media (max-width: 1200px)
+  .container 
+    max-width: 960px
+  .hamburger
+    display: none
+    border: none
+    background: none
+    cursor: pointer  
+  .home
+    max-height: 560px
+    padding: 38px 65px 85px 75px
+    &__box
+      grid-template-columns: 400px 380px
+      &-img
+        &-photo
+          width: 380px
+    &__title 
+      font-size: 52px
+      line-height: 70px
+      width: 400px
+    &__descr
+      width: 400px  
+    
+  .brandlogo  
+    padding-left: 75px
+    gap: 20px
+    &-items 
+      width: 115px
+      height: 26px
+    
+  .polcadots 
+    bottom: 135px
+    left: 270px
+    &-img  
+      width: 140px  
+    
+  .header
+    &__logo
+      height: 24px
+    &__nav
+      &-list
+        display: none
+  .hamburger 
+    position: absolute
+    top: 0
+    right: 0 
+    height: 41px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    cursor: pointer
+    width: 50px
+    align-items: center
+    border: 2px solid $main-color
+    padding: 10px
+    span 
+      display: block
+      width: 20px
+      height: 3px
+      background: $main-color      
+  .features 
+    padding: 93px 65px 0 75px    
+    &__items 
+      margin-top: 54px
+      margin-bottom: 54px
+    &__item
+      &-img 
+        height: 55px
+        width: 55px
+        margin-right: 6px
+      &-title   
+        font-size: 16px
+        line-height: 20px 
+      &-subtitle 
+        font-size: 12px
+        line-height: 15px   
+
+@media (max-width: 992px)
+  .container 
+    max-width: 720px      
+  .home
+    max-height: 440px
+    padding: 28px 35px 85px 35px
+    &__box
+      grid-template-columns: 350px 300px
+      gap: 30px
+      &-img
+        margin-top: 44px
+        &-photo
+          width: 300px 
+    &__title
+      margin-top: 70px
+      font-size: 48px
+      line-height: 60px
+    &__descr
+      width: 350px   
+      font-size: 13px
+      line-height: 18px
+  .polcadots 
+    bottom: 103px
+    left: 217px
+    &-img  
+      width: 110px      
+  .brandlogo
+    margin-top: 28px 
+    padding-left: 45px   
+
+  .button   
+    width: 180px
+    height: 55px 
+    font-size: 14px
+    &__main 
+    margin-top: 20px
+
+  .features 
+    padding: 60px 35px 0 35px
+    &__items 
+      margin-top: 40px
+      margin-bottom: 40px
+    &__item
+      &-img 
+        height: 45px
+        width: 45px
+        margin-right: 6px
+        padding: 15px
+      &-title   
+        font-size: 14px
+        line-height: 16px 
+      &-subtitle 
+        font-size: 10px
+        line-height: 10px  
+
+@media (max-width: 768px)
+  .container 
+    max-width: 540px  
+  .home  
+    max-height: 932px
+    &__box
+      grid-template-columns: 540px
+      grid-template-rows: 367px 732px
+      row-gap: 50px
+      justify-content: center
+      text-align: center
+      margin: 0 auto
+      &-img
+        margin-top: 0
+        &-photo  
+          width: 100%
+    &__title
+      width: 540px
+      margin-top: 60px  
+      font-size: 51px
+      line-height: 62px
+    &__descr
+      margin-top: 25px
+      font-size: 14px  
+      width: 540px
+  .polcadots
+    bottom: 173px
+    left: 194px
+    &-img 
+      width: 174px   
+      height: 174px 
+  .button
+    margin-top: 53px
+    width: 320px
+    height: 68px
+    font-size: 16px
+  .brandlogo
+    margin-top: 351px
+    gap: 50px   
+    max-width: 520px
+
+  .features
+    &__items 
+      margin: 0 auto 
+      margin-top: 60px
+      margin-bottom: 60px
+      width: 530px
+      flex-wrap: wrap
+      row-gap: 60px
+      column-gap: 40px
+      justify-content: start
+    &__item
+      &-img 
+        height: 70px
+        width: 70px
+        padding: 22px
+        margin-right: 21px
+      &-title 
+        font-size: 18px
+        line-height: 22px 
+      &-subtitle 
+        font-size: 14px
+        line-height: 17px   
+    
+@media (max-width: 576px)
+  .container 
+    width: 100%
+    padding: 0 10px  
+  .home  
+    &__box
+      grid-template-columns: 320px
+      grid-template-rows: 445px 432px
+    &__title
+      width: 320px  
+    &__descr
+      width: 320px 
+  .brandlogo 
+    margin-top: 120px
+    flex-wrap: wrap
+    row-gap: 30px
+    column-gap: 40px
+    justify-content: center
+    padding-left: 27px
+    padding-right: 27px
+    &-items 
+      width: 100px
+  .polcadots 
+    bottom: 155px
+    left: 90px  
+  .features 
+    padding: 57px 34px 0 24px  
+    &__items
+      width: 100%
+      padding: 0 10px
+      justify-content: space-around
+    &__item
+      flex-direction: column  
+      &-title 
+        font-size: 16px
+      &-subtitle 
+        font-size: 12px
+         
+
