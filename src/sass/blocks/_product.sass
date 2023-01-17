@@ -1,0 +1,44 @@
+.product
+  padding: 133px 135px 0 135px
+  color: $title-color
+  &__box
+    justify-content: center
+    display: flex
+    flex-direction: row
+    gap: 31px
+    &-item
+      border: 2px solid rgba(118, 118, 117, 0.25)
+      width: 268px
+      height: 443px
+      text-align: center
+      transition: all 0.6s
+      &:hover
+        scale: 110%
+        transition: all 0.6s
+        border: 2px solid $main-color
+      &-img 
+        margin-top: 25px
+      &-stars   
+        margin-top: 5px
+      &-descr  
+        margin-top: 21px
+        font-weight: 400
+        font-size: 20px
+        line-height: 24px
+      &-price  
+        margin-top: 25px
+        display: flex
+        flex-direction: row
+        gap: 8px
+        font-size: 20px
+        line-height: 24px
+        justify-content: center
+        &-new
+          font-weight: 400
+          color: $main-color
+        &-old 
+          font-weight: 600px
+          text-decoration-line: line-through
+          color: #767675 
+          opacity: 0.35
+ 

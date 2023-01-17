@@ -6,16 +6,16 @@
     display: grid
     grid-template-columns: 533px 468px
     gap: 127px
-    justify-content: space-between
+    &-text
+      position: relative
     &-img
       margin-top: 64px
+      width: 100%
+      height: 100%
+      object-fit: cover
       &-photo
         position: relative
-        object-fit: contain
         width: 468px 
-        //  width: 100%
-        // height: 100%
-        object-fit: cover
   &__title
     margin-top: 112px 
     font-weight: 600
@@ -28,18 +28,13 @@
     font-weight: 400
     font-size: 16px
     line-height: 23px
-
 .brandlogo
-  margin: 0 auto
+  position: absolute
   margin-top: 46px 
-  padding-left: 135px
   display: flex
   justify-content: flex-start
   align-items: center
-  gap: 30px
-  &-items 
-    width: 155px
-    height: 34px        
+  gap: 30px     
 .header 
   display: flex
   justify-content: space-between

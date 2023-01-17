@@ -5,17 +5,21 @@
     background: none
     cursor: pointer   
   .home
+    padding: 42px 105px 130px 105px
     max-height: 603px
     &__box
+      justify-content: center
       grid-template-columns: 450px 421px
-      gap: 80px
       &-img
         &-photo
           width: 421px
     &__title
       font-size: 60px  
+  .button
+    &__main
+      margin-bottom: 61px    
   .features 
-    padding: 103px 105px 0 105px        
+    padding: 103px 105px 0 105px    1439
   .header
     &__logo
       height: 26px
@@ -35,36 +39,35 @@
       grid-template-columns: 490px 520px
       &-img
         padding: 0 25px 55px 25px
-    .title
-      font-size: 56px
-      line-height: 68px       
+  .title, .title-center 
+    font-size: 56px
+    line-height: 68px   
+  .stars
+    padding: 103px 105px 0 105px 
+    &__box
+      grid-template-columns: 520px 490px
+      &-img
+        padding: 0 0 55px 55px
+      &-success
+        gap: 75px  
+  .button
+    &__big     
+      width: 226px
+      height: 71px
+      margin-top: 45px 
+  .variety
+    padding: 103px 105px 0 105px  
+    &__box
+      grid-template-columns: repeat(4, minmax(248px, auto))
+      grid-template-rows: repeat(2, minmax(288px, auto)) 
+  .product
+    padding: 103px 105px 0 105px     
+  .ingredients
+    padding: 103px 105px 0 105px  
 
 @media (max-width: 1200px)
   .container 
     max-width: 960px
-  .hamburger
-    display: none
-    border: none
-    background: none
-    cursor: pointer    
-  // .hamburger 
-  //   position: absolute
-  //   top: 0
-  //   right: 0 
-  //   height: 41px
-  //   display: flex
-  //   flex-direction: column
-  //   justify-content: space-between
-  //   cursor: pointer
-  //   width: 50px
-  //   align-items: center
-  //   border: 2px solid $main-color
-  //   padding: 10px
-  //   span 
-  //     display: block
-  //     width: 20px
-  //     height: 2px
-  //     background: $main-color  
   .home
     max-height: 560px
     padding: 38px 65px 85px 75px
@@ -80,14 +83,10 @@
     &__descr
       width: 400px  
   .brandlogo  
-    padding-left: 75px
     gap: 20px
-    &-items 
-      width: 115px
-      height: 26px
   .polcadots 
     bottom: 135px
-    left: 260px 
+    left: 240px 
   .header
     &__logo
       height: 24px
@@ -124,7 +123,7 @@
         margin-right: 6px
       &-title   
         font-size: 16px
-        line-height: 20px 
+        line-height: 20px  
       &-subtitle 
         font-size: 12px
         line-height: 15px  
@@ -133,40 +132,72 @@
     &__box
       grid-template-columns: 410px 456px
       gap: 60px
-    .subtitle
-      margin-top: 65px  
-    .title 
-      font-size: 46px
-      line-height: 66px   
-      margin-bottom: 50px   
+  .subtitle
+    margin-top: 65px  
+    &-center
+      margin-top: 0
+  .title, .title-center 
+    font-size: 46px
+    line-height: 66px   
+    margin-bottom: 50px   
+  .stars
+    padding: 73px 75px 0 75px 
+    &__box
+      grid-template-columns: 450px 410px
+      gap: 50px 
+  .variety
+    padding: 73px 75px 0 75px 
+    &__box
+      grid-template-columns: repeat(2, 320px)
+      grid-template-rows: repeat(4, 293px)
+      &-item
+        &-three
+          grid-column: 2/3
+        &-four 
+          grid-row: 2/3
+        &-six 
+          grid-column: 1/2
+          grid-row: 3/4
+  .product
+    padding: 73px 75px 0 75px   
+    text-align: center   
+    &__box
+      flex-wrap: wrap   
+  .ingredients
+    padding: 73px 75px 0 75px      
 
 @media (max-width: 992px)
   .container 
     max-width: 720px      
-  .home
-    max-height: 440px
+  .home  
     padding: 28px 35px 85px 35px
+    max-height: 882px
     &__box
-      grid-template-columns: 350px 300px
-      gap: 30px
+      grid-template-columns: 720px
+      grid-template-rows: 322px 516px
+      row-gap: 50px
+      justify-content: center
+      text-align: center
+      margin: 0 auto
       &-img
-        margin-top: 44px
-        &-photo
-          width: 300px 
+        margin-top: 0
     &__title
-      margin-top: 70px
-      font-size: 48px
-      line-height: 60px
+      margin: 0 auto
+      margin-top: 60px
+      font-size: 51px
+      line-height: 62px
     &__descr
-      width: 350px   
+      margin: 0 auto
+      margin-top: 10px 
       font-size: 13px
       line-height: 18px
   .polcadots 
     bottom: 143px
     left: 157px    
   .brandlogo
-    margin-top: 28px 
-    padding-left: 45px   
+    margin-top: 580px 
+    padding-left: 110px
+    padding-right: 110px
   .button   
     width: 180px
     height: 55px 
@@ -175,6 +206,7 @@
     margin-top: 20px
   .features 
     padding: 60px 70px 0 70px
+    margin-top: 180px
     &__items 
       margin-top: 40px
       margin-bottom: 40px
@@ -205,12 +237,42 @@
         display: flex
         flex-direction: column
         text-align: center
-    .subtitle
-      margin-top: 55px  
-    .polcadots
-      &-title
-        top: -35px
-        left: 0  
+  .subtitle
+    margin-top: 55px  
+  .polcadots
+    &-title
+      top: -35px
+      left: 0  
+  .stars
+    padding-top: 70px
+    &__box
+      display: flex
+      flex-wrap: wrap-reverse
+      justify-content: center
+      gap: 0
+      &-img   
+        padding: 0 35px 65px 35px   
+        img
+          margin-top: -15px  
+      &-text    
+        display: flex
+        flex-direction: column
+        text-align: center   
+      &-success    
+        justify-content: center
+  .button
+    &__big     
+      width: 220px
+      height: 70px
+      margin: auto
+      margin-top: 45px  
+    &__ingredients
+      margin-bottom: 100px  
+  .ingredients  
+    &__title
+      font-size: 35px
+      line-height: 42px
+      padding: 100px 74px 0 74px 
        
 @media (max-width: 768px)
   .container 
@@ -219,37 +281,38 @@
     max-height: 932px
     &__box
       grid-template-columns: 540px
-      grid-template-rows: 367px 732px
-      row-gap: 50px
-      justify-content: center
-      text-align: center
-      margin: 0 auto
-      &-img
-        margin-top: 0
-        &-photo  
-          width: 100%
+      grid-template-rows: 365px 516px
     &__title
       width: 540px
-      margin-top: 60px  
-      font-size: 51px
-      line-height: 62px
     &__descr
       margin-top: 25px
       font-size: 14px  
       width: 540px
-  .polcadots
-    bottom: 167px
-    left: 73px
   .button
     margin-top: 53px
     width: 320px
     height: 68px
     font-size: 16px
+    &__small
+      width: 148px
+      height: 42px
+    &__white
+      width: 177px
+      height: 57px
+      margin-top: 29px
+    &__ingredients
+      width: 293px
+      height: 79px
+      margin-top: 0  
+      margin-bottom: 0
   .brandlogo
-    margin-top: 351px
-    gap: 50px   
-    max-width: 520px
+    margin-top: 551px
+    flex-wrap: wrap
+    justify-content: center
+    padding-left: 100px
+    padding-right: 100px
   .features
+    margin-top: 200px
     &__items 
       margin: 0 auto 
       margin-top: 60px
@@ -275,40 +338,73 @@
     &__box
       &-img  
         padding-bottom: 55px    
-    .subtitle 
-      margin-top: 50px  
-    .title 
-      font-size: 44px
-      line-height: 62px
-      margin-bottom: 45px  
-    .descr
-      gap: 16px
-      font-weight: 400
-      font-size: 14px
-      line-height: 16px
-    
+  .subtitle, .subtitle-center 
+    margin-top: 50px  
+  .title, .title-center  
+    font-size: 44px
+    line-height: 62px
+    margin-bottom: 45px 
+    &-center  
+      margin-bottom: 65px
+  .descr
+    gap: 16px
+    font-weight: 400
+    font-size: 14px
+    line-height: 16px
+  .stars
+    &__box
+      &-img  
+        padding-bottom: 55px 
+      &-success 
+        gap: 40px     
+  .variety
+    &__box
+      grid-template-columns: 320px
+      grid-template-rows: repeat(8, 293px)
+      &-item
+        &-three
+          grid-column: 1/2
+        &-four 
+          grid-row: 4/5
+        &-five
+          grid-row: 6/7  
+        &-six
+          grid-row: 5/6 
+        &-seven
+          grid-row: 8/9 
+        &-eight
+          grid-row: 7/8      
+  .product
+    &__box
+      &-item
+        &:hover
+        scale: 105%
+        transition: all 0.8s
+  .ingredients  
+    padding: 68px 0 0 0  
+    &__container
+      height: 459px
+      margin: 0 auto
+ 
 @media (max-width: 576px)
   .container 
     width: 100%
-    padding: 0 10px  
+    padding: 0 10px 
   .home  
     &__box
-      grid-template-columns: 320px
-      grid-template-rows: 445px 432px
+      grid-template-columns: minmax(320px, auto)
+      grid-template-rows: 445px 515px
+      &-img
+        &-photo
+          width: 320px
     &__title
       width: 320px  
     &__descr
       width: 320px 
   .brandlogo 
-    margin-top: 120px
-    flex-wrap: wrap
-    row-gap: 30px
-    column-gap: 40px
-    justify-content: center
-    padding-left: 27px
-    padding-right: 27px
-    &-items 
-      width: 100px
+    margin-top: 475px
+    padding-left: 0px
+    padding-right: 0px
   .polcadots 
     bottom: 155px
     left: 90px  
@@ -320,6 +416,8 @@
       justify-content: space-around
     &__item
       flex-direction: column  
+      &-img
+        margin: 0 auto
       &-title 
         font-size: 16px
       &-subtitle 
@@ -333,14 +431,36 @@
           width: 274px
           height: 417px
           margin-top: -29px
-    .title
-      font-size: 35px
-      line-height: 42px    
-      margin-top: 13px  
-      margin-bottom: 52px
-    .polcadots
-      &-title 
-        top: -53px
-        left: 14px  
+  .title
+    font-size: 35px
+    line-height: 42px    
+    margin-top: 13px  
+    margin-bottom: 52px
+  .polcadots
+    &-title 
+      top: -53px
+      left: 14px  
+  .stars
+    padding: 62px 27px 0 27px
+    &__box
+      &-img
+        padding: 0 21px 32px 22px
+        margin-top: 50px
+        img
+          width: 277px
+          height: 489px
+          margin-top: -61px
+      &-success
+        flex-direction: column  
+  .product
+    padding: 62px 27px 0 27px
+    &__box
+      &-item
+        &-img 
+          width: 180px   
+  .ingredients  
+    &__title
+      padding: 100px 14px 0 14px             
+
 
 
