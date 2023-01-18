@@ -64,7 +64,14 @@
     padding: 103px 105px 0 105px     
   .ingredients
     padding: 103px 105px 0 105px  
-
+  .footer
+    padding: 103px 105px 0 105px   
+    &__box 
+      justify-content: center
+      &-descr
+        margin-left: 30px 
+        gap: 60px  
+        
 @media (max-width: 1200px)
   .container 
     max-width: 960px
@@ -164,7 +171,13 @@
     &__box
       flex-wrap: wrap   
   .ingredients
-    padding: 73px 75px 0 75px      
+    padding: 73px 75px 0 75px  
+  .footer
+    padding: 73px 75px 0 75px   
+    &__box 
+      &-descr
+        margin-left: 10px 
+        gap: 20px        
 
 @media (max-width: 992px)
   .container 
@@ -267,13 +280,31 @@
       margin: auto
       margin-top: 45px  
     &__ingredients
-      margin-bottom: 100px  
+      margin-bottom: 100px 
+    &__footer
+      margin-top: 0
+      width: 118px   
+      height: 50px
   .ingredients  
     &__title
       font-size: 35px
       line-height: 42px
       padding: 100px 74px 0 74px 
-       
+  .footer
+    &__box
+      &-logos
+        p
+          margin-bottom: 12px
+      &-descr
+        margin-left: 120px
+        column-gap: 110px
+        flex-wrap: wrap
+        justify-content: center
+    &-title 
+      margin-bottom: 16px  
+  .copyright
+    margin-top: 50px       
+
 @media (max-width: 768px)
   .container 
     max-width: 540px  
@@ -305,6 +336,10 @@
       height: 79px
       margin-top: 0  
       margin-bottom: 0
+    &__footer
+      margin-top: 0
+      width: 118px   
+      height: 50px  
   .brandlogo
     margin-top: 551px
     flex-wrap: wrap
@@ -385,6 +420,15 @@
     &__container
       height: 459px
       margin: 0 auto
+
+  .footer
+    &__box
+      &-descr
+        margin-left: 25px
+        column-gap: 78px
+        justify-content: start
+    &-title 
+      margin-bottom: 16px      
  
 @media (max-width: 576px)
   .container 
@@ -460,7 +504,41 @@
           width: 180px   
   .ingredients  
     &__title
-      padding: 100px 14px 0 14px             
+      padding: 100px 14px 0 14px    
+  .footer
+    padding: 53px 15px 0 15px
+    &__box
+      flex-direction: column    
+      &-logos
+        margin: 0 auto
+        text-align: center
+        p
+          margin-bottom: 35px
+          margin-top: 35px
+        &-social
+          justify-content: center
+      &-descr
+        margin: auto  
+        margin-top: 80px 
+        justify-content: center
+        flex-direction: column
+        text-align: center
+        gap: 35px
+        width: 320px
+        &-connection
+          &-form
+            margin-top: 30px
+            flex-direction: column
+            align-items: center
+            gap: 10px
+    &-descr    
+      max-width: 300px
+  .button
+    &__footer
+      width: 205px
+      height: 50px    
+      margin-right: 15px
+    
 
 
 

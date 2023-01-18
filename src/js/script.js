@@ -9,3 +9,8 @@ hamburger.addEventListener("click", () => {
 closeElem.addEventListener("click", () => {
 	menu.classList.remove("active");
 });
+
+// Set current year
+const yearEL = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+yearEL.textContent = currentYear;
